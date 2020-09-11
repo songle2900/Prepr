@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta stuff-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>FrontEnd_Landing_Page</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!--font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ebc5d1d78c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .navbar {
+        padding-top: 20px;
+        padding-left: 75px;
+        padding-bottom: 110px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        background-color: white;
+        font: serif;
+      }
+      .navbar-brand {
+        border-style: solid;
+        border-color: #2D25C8;
+        font-size: 12px;
+        font-weight: bold;
+        color: #2D25C8 !important;
+        text-align: center;
+        padding: 5px 25px;
+        height: 35px;
+      }
+      div.container-fluid li.signin {
+        color: purple;
+      }
+      p {
+        color: gray;
+        font-size: 16px;
+      }
+      .img-responsive {
+        max-width: 45%;
+        height: auto;
+        margin-left: auto;
+        position: relative;
+      }
+      a:hover {
+        color: #2D25C8 !important;
+      }
+      .btn {
+        background-color: #2D25C8;
+        color: white;
+        border-radius: 20px;
+        min-width: 195px;
+      }
+      .blue {
+        color: #2D25C8;
+      }
+      .quote {
+        color: black;
+        font-size: 18px;
+      }
+      .secondquote {
+        color: black;
+        font-size: 22px;
+      }
+      .man {
+        float: left;
+        padding: 60px;
+      }
+      .rocket {
+        padding-bottom: 150px;
+        float: right;
+        position: relative;
+        top: -60px;
+      }
+      #FirstPara {
+        font-size: 13px;
+        text-align: justify;
+      }
+      #Quality {
+        text-align: center;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+      }
+      #align {
+        text-align: center;
+        font-size: 28px;
+        font-family: "Roboto", sans-serif;
+      }
+      #thirdHeader {
+        text-align: center;
+        color: black;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+      }
+      .bg-1 {
+        padding-top: 20px;
+        padding-left: 100px;
+      }
+      .bg-2 {
+        background-color: #F3F6F9;
+        margin: 0em;
+      }
+      #Test {
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        display: inline-grid;
+      }
+      #Dev {
+        float: right;
+        padding-right: 20px;
+        width: 25%;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        display: inline-grid;
+      }
+      #Deploy {
+        float: right;
+        padding-right: 20px;
+        width: 25%;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        display: inline-grid;
+      }
+      #Prod {
+        margin: 2em;
+        width: 25%;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        display: inline-grid;
+      }
+      .piechart {
+        position: relative;
+        top: -64px;
+        left: 80px;
+        padding-bottom: 20px;
+      }
+      .graph {
+        position: relative;
+        top: -64px;
+        left: 80px;
+      }
+      .beaker {
+        position: relative;
+        top: -64px;
+        left: 60px;
+      }
+      .blastoff {
+        position: relative;
+        top: -64px;
+        left: 80px;
+      }
+      .ThirdPara {
+        color: gray;
+        font-size: 15px;
+        text-align: left;
+        padding-left: 80px;
+        line-height: 200%;
+        padding-bottom: 20px;
+      }
+      .ThirdParaTwo {
+        color: gray;
+        font-size: 15px;
+        text-align: left;
+        padding-left: 60px;
+        line-height: 200%;
+        padding-bottom: 20px;
+      }
+      .ThirdParaThree {
+        color: gray;
+        font-size: 15px;
+        text-align: left;
+        padding-left: 80px;
+        line-height: 200%;
+        padding-bottom: 20px;
+      }
+
+      .col {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        display: inline-block;
+      }
+      .block {
+        position: relative;
+        top: 5px;
+        right: 10px;
+        text-align: left;
+      }
+      .bg-4 {
+        background-color: #2D25C8;
+        padding-bottom: 50px;
+        padding-top: 40px;
+      }
+      #people {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-weight: bold;
+      }
+      .card-body {
+        background-color: white;
+        border-radius: 0.25rem;
+        padding: 40px 20px;
+      }
+      .card-text {
+        color: gray;
+        padding-left: 50px;
+      }
+      .quotecard {
+        padding-left: 20px;
+        position: relative;
+        top: -20px;
+      }
+      .reviews {
+        padding-top: 20px;
+        padding-left: 50px;
+        font-family: "Roboto", sans-serif;
+      }
+      .break {
+        padding-top: 10px;
+      }
+      .holder {
+        position: relative;
+        float: right;
+        top: -60px;
+      }
+      #fifth {
+        text-align: center;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        font-size: 36px;
+        padding-top: 60px;
+      }
+      .projects {
+        padding-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      #sixth {
+        font-size: 16px;
+        text-align: center;
+        color: #878C9C;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      .pls {
+        float: right;
+        position: relative;
+        top: -25px;
+      }
+      .footer {
+        padding-top: 20px;
+        background-color: #F3F6F9;
+        position: absolute;
+        width: 100%;
+      }
+      .bg-col {
+        background-color: #2D25C8;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+      }
+      #last {
+        text-align: left;
+        color: white;
+      }
+      .btn-info {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        float: right;
+        position: relative;
+        top: -40px;
+        background-color: white;
+        color: #2D25C8;
+      }
+      .btn-unique {
+        background-color: #2D25C8;
+        color: white;
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navbar------------------------------------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand " href="#">Simon</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a>Services</a></li>
+          <li><a>Pricing</a></li>
+          <li><a>FAQs</a></li>
+          <li><a>Blog</a></li>
+          <li class="signin"><a>Sign in</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--first container---------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid bg-1">
+      <h2>
+        <img
+          class="rocket"
+          src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FDummy%20Image.png?v=1599370141508"
+          alt="Rocket"
+        />Unilimited is Over Crowded
+      </h2>
+      <p id="FirstPara">
+        The word is real content during design can distract designers and design
+        review teams alike away from the design, and insisting on always.
+      </p>
+      <button type="button" class="btn">Hire Us Now</button>
+    </div>
+    <!-- second container-------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid bg-2 ">
+      <img
+        src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FDummy%20Image-1.png?v=1599413531088"
+        class="man"
+        alt="dummy-man"
+      />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2>Hello! My Name is <span class="blue">Andrew Theodore</span></h2>
+      <p>
+        The argument in favor of using filler text goes something like this: If
+        you use real content in the design process, anytime you<br />reach a
+        review point you end up reviewing and negotiating the content. Design
+        first, with real content in mind (of course!), but<br />don’t drop in
+        the real content until the design is well on its way. Using filler text
+        avoids the inevitable argumentation that<br />
+        accompanies.
+      </p>
+      <br />
+      <p class="quote">
+        “ Real content during design can distract designers and design review
+        teams alike away from design insisting on always use publication-ready
+        content a real drag on the design process.”
+      </p>
+      <br />
+      <p>
+        Only use filler text that has been edited for length and format to match
+        the characteristics of real content as closely as possible, and use real
+        content where possible. Design is an evolutionary process, and filler
+        text is just one tool in your progress-pushing arsenal. Use it where it
+        makes sense to use it, and pull it once the natural process indicates.
+      </p>
+      <br />
+      <p class="secondquote">
+        I Learned finally quality, time, price, are inverve proposal.!
+      </p>
+    </div>
+    <!--third container---------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid bg-3">
+      <h2 id="thirdHeader">
+        Like Andrew, We don’t your step-back from your success
+      </h2>
+      <h2 id="Quality">
+        <span class="blue">Need Quality?have Time? Hire Us</span>
+      </h2>
+      <p id="align">For</p>
+      <br />
+      <br />
+      <br />
+      <div class="row">
+        <div class="col">
+          <h3>
+            <img
+              src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FIcon.png?v=1599423337840"
+              class="piechart"
+              alt="pie"
+            />
+            Product Design
+          </h3>
+          <p class="ThirdPara">
+            Li Europan lingues es membres del sam familie. Lor separat
+            existentie es un myth por scientie..,
+          </p>
+        </div>
+        <div class="col">
+          <h3>
+            <img
+              src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FL0001.png?v=1599423344442"
+              alt="graph"
+              class="graph"
+            />
+            Development
+          </h3>
+          <p class="ThirdPara">
+            At solmen va esser necessi far uniform grammatica, pronunciation elu
+            sommun paroles..,
+          </p>
+        </div>
+        <div class="col">
+          <h3>
+            <img
+              src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FIcon-1.png?v=1599423351487"
+              alt="beaker"
+              class="beaker"
+            />
+            Testings
+          </h3>
+          <p class="ThirdParaTwo">
+            Omnicos directe al desirabilite de un nov lingua franca: On refusa
+            continuar payar custosi traductores..,
+          </p>
+        </div>
+        <div class="col">
+          <h3>
+            <img
+              src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FL-1.png?v=1599423356844"
+              alt="blastoff"
+              class="blastoff"
+            />
+            Deployment
+          </h3>
+          <p class="ThirdParaThree">
+            Li lingues differe solmen in li grammatica, li pronunciation e li
+            plu commun vocabules..,
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--fourth container----------------------------------------------------------------------------------------------------->
+    <div class="container-fluid bg-4">
+      <h3 id="people">See, What Jenny, Giga, Davis telling about us</h3>
+      <br />
+      <br />
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FIcon-2.png?v=1599433811568"
+                class="quotecard"
+                alt="quote"
+              />
+              <p class="card-text">
+                “The argument in favor of using filler text goes something like
+                this: If you use real content in the design process, anytime you
+                reach a review point you’ll end up reviewing the co.”
+              </p>
+              <h2 class="reviews">
+                <strong>Lurch Schpellchek</strong>
+                <br />
+                <p class="break">
+                  Graphic Design
+                </p>
+                <img
+                  src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FImage%20Place%20Holder.png?v=1599434547449"
+                  class="holder"
+                  alt="imgage-holder"
+                />
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FIcon-2.png?v=1599433811568"
+                class="quotecard"
+                alt="quote"
+              />
+              <p class="card-text">
+                “Using real content during design can distract designers and
+                design review teams alike away from the design, and insisting on
+                always using publication-ready content can be a real.”
+              </p>
+              <h2 class="reviews">
+                <strong> Fleece Marigold</strong>
+
+                <p class="break">
+                  Web Designer
+                </p>
+              </h2>
+              <img
+                src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FImage%20Place%20Holder.png?v=1599434547449"
+                class="holder"
+                alt="imgage-holder"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--fifth container---------------------------------------------------------------------------------------------------------->
+    <div class="container-fluid bg-5">
+      <h2 id="fifth">Some of our Projects</h2>
+      <img
+        src="https://cdn.glitch.com/5a6ff0a5-d078-4fd1-8084-73fef31e8fba%2FClients.png?v=1599435295069"
+        class="projects"
+        alt="projects"
+      />
+
+      <p id="sixth">
+        <br />
+        <br />Don't forget to check us on
+        <a class="icons-sm dribbble-ic"
+          ><i class="fab fa-dribbble fa-sm"> </i
+        ></a>
+        Dribble
+        <a class="icons-sm behance-ic"><i class="fab fa-behance fa-sm"></i></a>
+        Behance
+      </p>
+    </div>
+    <!--sixth container-->
+    <div class="container-fluid bg-7">
+      <div class="card">
+        <div class="card-body bg-col ">
+          <h3 id="last">
+            Forget Andrew Expierence, Wanna <br />
+            Jenny's experience?
+          </h3>
+          <button
+            type="button"
+            class="btn btn-info btn-lg"
+            data-toggle="modal"
+            data-target="#modalContactForm"
+          >
+            Hit Us Now
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="modalContactForm"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header text-center">
+                  <h4 class="modal-title">
+                    Get in Touch
+                  </h4>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body mx-3">
+                  <div class="md-form mb-5">
+                    <label data-error="wrong" data-success="right" for="form34"
+                      >Name*</label
+                    >
+                    <input
+                      type="text"
+                      id="form34"
+                      class="form-control validate"
+                    />
+                  </div>
+
+                  <div class="md-form mb-5">
+                    <label data-error="wrong" data-success="right" for="form29"
+                      >Email ID*</label
+                    >
+                    <input
+                      type="email"
+                      id="form29"
+                      class="form-control validate"
+                    />
+                  </div>
+
+                  <div class="md-form mb-5">
+                    <label data-error="wrong" data-success="right" for="form32"
+                      >Subject*</label
+                    >
+                    <input
+                      type="text"
+                      id="form32"
+                      class="form-control validate"
+                    />
+                  </div>
+
+                  <div class="md-form">
+                    <label data-error="wrong" data-success="right" for="form8"
+                      >Description</label
+                    >
+                    <textarea
+                      type="text"
+                      id="form8"
+                      class="md-textarea form-control"
+                      rows="4"
+                              placeholder="Enter the text"
+                    ></textarea>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">
+                      SEND MESSAGE<i class="fas fa-paper-plane-o ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-------------------------------------------------------------------------------------------------------------------->
+    <footer class="page-footer">
+      <div class="container-fluid bg-6"></div>
+      <!-- Copyright -->
+      <div class="footer">
+        All Rights Reserved ©Simon. Designed by DigitalHeaps
+        <div class="col-md-12 mb-4">
+          <!--Facebook-->
+          <a class="icons-sm fb-ic pls"
+            ><i class="fab fa-facebook-f fa-2x fa-fw f"> </i
+          ></a>
+          <!--Twitter-->
+          <a class="icons-sm tw-ic pls"
+            ><i class="fab fa-twitter fa-2x fa-fw"> </i
+          ></a>
+          <!--Linkedin-->
+          <a class="icons-sm li-ic pls"
+            ><i class="fab fa-linkedin-in fa-2x fa-fw"> </i
+          ></a>
+          <!--Google +-->
+          <a class="icons-sm gplus-ic pls"
+            ><i class="fab fa-google-plus-g fa-2x fa-fw"> </i
+          ></a>
+        </div>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--     <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <!--  <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script> 
+    -->
+  </body>
+</html>
