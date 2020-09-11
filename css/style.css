@@ -1,3 +1,28 @@
+.navbar {
+    padding: 2.5rem;
+}
+
+.navbar-brand {
+    border-style: solid;
+    border-color: #2921c7;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2921c7 !important;
+    text-align: center;
+    padding: 0.2rem 2.5rem;
+    margin-left: 1rem;
+}
+
+.nav-item {
+    margin-left: 1rem;
+}
+
+#sign {
+    color: #2921c7;
+}
+
+
+
 /* .navbar {
     padding-top: 20px;
     padding-left: 75px;
