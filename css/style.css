@@ -1,3 +1,4 @@
+/* Header */
 .navbar {
     padding: 2.5rem;
 }
@@ -19,6 +20,16 @@
 
 #sign {
     color: #2921c7;
+}
+
+/* First Container */
+.btn {
+    background-color: #2D25C8;
+    color: white;
+    border-radius: 20em;
+    min-width: 15rem;
+    min-height: 2.5rem;
+    font-size: 1rem;
 }
 
 
