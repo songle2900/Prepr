@@ -1,3 +1,8 @@
+/* General */
+.container-fluid {
+  margin-top: 5rem;
+}
+
 /* Header */
 .navbar {
     padding: 2.5rem;
@@ -32,6 +37,16 @@
     font-size: 1rem;
 }
 
+/* Third Container */
+.thirdCon {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.head {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
 
 
 /* .navbar {
