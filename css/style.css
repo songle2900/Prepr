@@ -48,6 +48,77 @@
   margin-bottom: 1rem;
 }
 
+/* Fourth Container */
+#forPad {
+  padding-bottom: 3rem;
+}
+
+.fourCon {
+  color: white;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.card {
+  margin-top: 0.5rem;
+}
+
+#cardCon {
+  position: relative;
+}
+
+#quote {
+  position: relative;
+  top: 1rem;
+  right: 0.2rem;
+}
+
+.card-text {
+  padding-left: 3rem;
+}
+
+.writer {
+  padding-top: 0.5rem;
+  padding-left: 3rem;
+}
+
+#black {
+  top: -2rem;
+  position: relative;
+  float: right;
+}
+
+/* Fifth Container */
+.center-block {
+  display: block;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sixth Container */
+.btn2 {
+  background-color: white;
+  color: #2D25C8;
+  border-radius: 20em;
+  border: none;
+  min-width: 15rem;
+  min-height: 2.5rem;
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+
+.sixHeader {
+  color: white;
+  padding: 3rem;
+}
+
+/* Footer */
+#fooPad{
+  padding-bottom: 1rem !important;
+  padding-top: 1rem !important;
+}
 
 /* .navbar {
     padding-top: 20px;
